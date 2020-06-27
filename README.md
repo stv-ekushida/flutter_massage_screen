@@ -1,4 +1,4 @@
-# flutter_massage_screen
+# flutter_message_screen
 チャット風UI
 
 
