@@ -21,7 +21,6 @@ class SendMessageView extends StatelessWidget {
               Stack(
                 alignment: Alignment.topRight,
                 children: <Widget>[
-                  //for right corner
                   Image.asset(
                     'images/send_message.png',
                     fit: BoxFit.scaleDown,
@@ -30,15 +29,12 @@ class SendMessageView extends StatelessWidget {
                     color: _backgroundColor,
                   ),
 
+                  //送信メッセージ
                   Container(
                     margin: const EdgeInsets.only(right: 6.0),
                     width: MediaQuery.of(context).size.width * 0.9,
                     decoration: BoxDecoration(
                       color: Theme.of(context).primaryColor,
-                      border: Border.all(
-                          color: _backgroundColor,
-                          width: .25,
-                          style: BorderStyle.solid),
                       borderRadius: BorderRadius.only(
                         topRight: const Radius.circular(5.0),
                         topLeft: const Radius.circular(5.0),
@@ -57,14 +53,12 @@ class SendMessageView extends StatelessWidget {
                 ],
               ),
 
-              //date time
+              //送信日付
               Container(
                 margin: const EdgeInsets.only(right: 6.0),
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
                   color: _backgroundColor,
-                  border: Border.all(
-                      color: Colors.grey, width: .25, style: BorderStyle.solid),
                   borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(5.0),
                     bottomLeft: Radius.circular(5.0),

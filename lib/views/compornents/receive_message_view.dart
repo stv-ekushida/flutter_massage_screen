@@ -17,7 +17,7 @@ class ReceiveMessageView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            //サムネイル
+            //サムネイル画像
             Expanded(
               flex: 1,
               child: Container(
@@ -34,7 +34,7 @@ class ReceiveMessageView extends StatelessWidget {
               width: 16,
             ),
 
-            //メッセージ
+            //受信メッセージ
             Expanded(
               flex: 3,
               child: Column(
@@ -52,10 +52,6 @@ class ReceiveMessageView extends StatelessWidget {
                         margin: const EdgeInsets.only(left: 6.0),
                         decoration: BoxDecoration(
                           color: backgroundColor,
-                          border: Border.all(
-                              color: backgroundColor,
-                              width: .25,
-                              style: BorderStyle.solid),
                           borderRadius: BorderRadius.only(
                               topRight: Radius.circular(5.0),
                               topLeft: Radius.circular(5.0)),
@@ -70,15 +66,11 @@ class ReceiveMessageView extends StatelessWidget {
                     ],
                   ),
 
-                  //date time
+                  //受信日時
                   Container(
                     margin: const EdgeInsets.only(left: 6.0),
                     decoration: BoxDecoration(
                       color: backgroundColor,
-                      border: Border.all(
-                          color: backgroundColor,
-                          width: .25,
-                          style: BorderStyle.solid),
                       borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(5.0),
                         bottomLeft: Radius.circular(5.0),
@@ -96,6 +88,5 @@ class ReceiveMessageView extends StatelessWidget {
             ),
           ],
         ));
-    ;
   }
 }

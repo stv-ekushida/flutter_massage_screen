@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_massage_screen/data/message_type.dart';
 import 'package:flutter_massage_screen/models/message.dart';
 import 'package:flutter_massage_screen/viewmodels/message_viewmodel.dart';
+import 'package:flutter_massage_screen/views/compornents/message_form.dart';
 import 'package:flutter_massage_screen/views/compornents/receive_message_view.dart';
 import 'package:flutter_massage_screen/views/compornents/send_message_view.dart';
 import 'package:provider/provider.dart';
@@ -54,7 +55,14 @@ class _MessageDetailPageState extends State<MessageDetailPage> {
                             message: msg,
                           );
                   }),
+            ),
+
+            //
+            Divider(height: 1.0),
+            MessageForm(
+              onPressed: () {},
             )
+            //
           ],
         ),
       ),
